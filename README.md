@@ -1,2 +1,2 @@
-# cosingClass2021
+# codingClass2021
 Мой первый репозиторий
