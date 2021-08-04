@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Информация обо мне</title>
+	<meta charset="utf-8">
+</head>
+<style>
+	.container{
+		width:1200px;
+		margin-right: auto;
+    	margin-left: auto;
+	}
+	.form {
+		display:flex; 
+		justify-content: space-evenly;
+		margin-top: 50px;
+	}
+	.info{
+		display: flex;
+		align-items: center;
+	}
+	.info > div:nth-child(1){
+		margin-right:30px;
+	}
+	table{
+		border:1px solid black;
+		border-collapse: collapse;
+	}
+	td{
+		border:1px solid black;
+	}
+	tr{
+		text-align: center;
+	}
+	span{
+		color:red;
+	}
+	a>h3{
+		text-align: center;
+	}
+</style>
+<body>
+<div class="container">
+	<div class="info">
+		<div>
+			<img src="img/my_photo.jpg"  width="500px" alt="Моё фото">
+		</div>
+		<div>
+			<h2>Белоногова Арина</h2>
+			<p><b>Адрес:</b> г. Челябинск</p>
+			<p><b>Опыт работы:</b> Работаю в данный момент администратором сайтов холдинга БОВИД</p>
+			<p><b>Образование:</b> СПО ЮУрГТК Прикладная информатика. Закончила обучение в 2019 году с <span>красным дипломом</span>. Хоть где-нибудь он пригодится?)))</p>
+			<p><b>Телефон:</b> +7(922) 719-07-48</p>
+
+		</div>
+	</div>
+	<div>
+		<h3>Знание языков</h3>
+		<table>
+			<tr>
+				<td></td>
+				<td>Java</td>			
+				<td>JavaScript</td>			
+				<td>C++</td>		
+				<td>C#</td> 	 		
+				<td>Swift</td>
+			</tr>
+
+			<tr>
+				<td>Уровень владения</td>
+				<td>Давно учила в колледже, все забыла :(</td>
+				<td>Изучаю маленькими шажочками, дошла до объектов и функций</td>
+				<td>Читала в колледже только теорию, без практики</td>
+				<td>Изучала в колледже, аналогичная ситуация как с Java</td>
+				<td>Слышала о нем, но даже не изучала</td>
+			</tr>
+
+			<tr>
+				<td>Сколько написано проектов?</td>
+				<td>0</td>
+				<td>1 в процессе. На нем как раз тренируюсь</td>
+				<td>0</td>
+				<td>Было много, даже какие-то игры, но все в рамках обучения в колледже</td>
+				<td>0</td>
+			</tr>
+
+			<tr>
+				<td>Оценка от 0 до 10</td>
+				<td>3</td>
+				<td>8</td>
+				<td>-</td>
+				<td>5</td>
+				<td>-</td>
+			</tr>
+
+			<tr>
+				<td>Логотипы</td>
+				<td><img src="img/java.png" alt=""></td>
+				<td><img src="img/js.png" alt=""></td>
+				<td><img src="img/c++.png" alt=""></td>
+				<td><img src="img/csharp.png" alt=""></td>
+				<td><img src="img/swift.png" alt=""></td>
+			</tr>
+		</table>
+	</div>
+
+	<div class="form">
+		<div>
+			<label>Телефон</label><br>
+			<input type="tel" name="phone" placeholder="+71234567890">
+		</div>
+		<div>
+			<label>Имя</label><br>
+			<input type="text" name="name" placeholder="Например, Иван">
+		</div>
+	</div>
+
+		<a href="#" onclick="openbox('text'); return false"><h3>Нажми на меня, чтобы узнать обо мне больше!</h3></a>
+		<div id="text" style="display: none;">
+			<p>Привет, хочу тебе немного рассказать о себе.</p>
+			<p>Как я вообще попала в IT-сферу? Не знаю, как-то получилось спонтано. Я целенаправлено шла в 10 класс, но через 1,5 месяца поняла, что это не мое и решила рискнуть. Позвонила в ближайший от моего дома колледж и узнала на какие специальности есть свободные бюджетные места. Мне назвали только одно "Прикладная информатика" и в тот момент я паралельно гуглила, что это вообще такое. После короткого разговора договорились о встрече и на следующий день меня взяли на бюджет.</p>
+			<p>Потом была веселая студенческая жизнь длинною в 4 года. Диплом, выпускной и...<br> И я думала это все, что я наконец-то смогу отдохнуть, но не так все просто. Через 2 дня после выпускного я устраиваюсь на работу в крупный холдинг и понеслааась работа.</p>
+			<p>Я потихоньку расту, развиваюсь, что-то учу и потом забываю и заново учу. Но с каждым разом я понимаю, что не зря решила рискнуть и поступила на IT-специальность</p>
+			<p>Some facts about me:</p>
+			<ul>
+				<li>ДИКО БОЮСЬ НАСЕКОМЫХ, особенно пауков</li>
+				<li>В детстве занималась легкой аттлетикой, так что фраза "Быстрые ноги *тут был мат* не получит" про меня :)</li>
+				<li>Не умею плавать, так что от проблем уплыть не смогу</li>
+				<li>Только вот не кидайтесь тухлыми помидорами, но я верю в астрологию</li>
+				<li>На ОГЭ списала русский, так что если найдете здесь ошибки, SORRY...</li>
+			</ul>
+		</div>
+
+</div>
+
+<script type="text/javascript">
+
+function openbox(id){
+    display = document.getElementById(id).style.display;
+
+    if(display=='none'){
+       document.getElementById(id).style.display='block';
+    }else{
+       document.getElementById(id).style.display='none';
+    }
+}
+</script>
+</body>
+</html>
